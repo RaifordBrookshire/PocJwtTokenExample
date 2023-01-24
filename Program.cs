@@ -9,11 +9,11 @@ Console.WriteLine("Hello, World!");
 // Create a payload with some claims
 var claims = new[]
 {
-    new Claim(JwtRegisteredClaimNames.Iss, "ChatGPT"),
+    new Claim(JwtRegisteredClaimNames.Iss, "Claim1"),
     new Claim(JwtRegisteredClaimNames.Exp, 
         DateTime.Now.AddSeconds(60).ToString()),
     new Claim("admin", "true"),
-    new Claim(ClaimTypes.Name, "ChatGPT"),
+    new Claim(ClaimTypes.Name, "Claim2"),
 };
 
 // Create a security key
